@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 3',
+    'title' => 'Muni Gualán',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -45,8 +45,8 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
-    'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+    'logo' => '<b>Muni Gualán</b>',
+    'logo_img' => 'vendor/adminlte/dist/img/LogoMuni2.jpg',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
@@ -122,7 +122,7 @@ return [
     */
 
     'classes_body' => '',
-    'classes_brand' => 'bg-primary',
+    'classes_brand' => '',
     'classes_brand_text' => '',
     'classes_content_wrapper' => '',
     'classes_content_header' => '',
@@ -247,25 +247,36 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text'        => 'pages',
+            'text' => 'Dashboard',
+            'url'  => 'home',
+            'icon'  => 'fas fa-fw fa-chart-pie',
+        ],
+       /* [
+            'text'        => 'paginas',
             'url'         => 'admin/pages',
             'icon'        => 'far fa-fw fa-file',
             'label'       => 4,
             'label_color' => 'success',
-        ],
-        ['header' => 'account_settings'],
+        ],*/
+        ['header' => 'BOLETAS'],
         [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
-        ],
-        [
-            'text' => 'change_password',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
+            'text' => 'Nueva Boleta',
+            'url'  => '#',
+            'icon' => 'fas fa-fw fa-file',
         ],
         [
-            'text'    => 'multilevel',
+            'text' => 'Reportes por poblacion',
+            'url'  => '#',
+            'icon' => 'fas fa-fw fa-folder',
+        ],
+        [
+            'text' => 'Reportes por vivienda',
+            'url'  => '#',
+            'icon' => 'fas fa-fw fa-archive',
+        ],
+        ['header' => 'ADMINISTRACION DEL SISTEMA'],
+        [
+            'text'    => 'Datos Generales',
             'icon'    => 'fas fa-fw fa-share',
             'submenu' => [
                 [
@@ -302,19 +313,34 @@ return [
                 ],
             ],
         ],
-        ['header' => 'labels'],
+        ['header' => 'CUENTA'],
         [
-            'text'       => 'important',
-            'icon_color' => 'red',
-            'url'        => '#',
+            'text' => 'profile',
+            'url'  => 'admin/settings',
+            'icon' => 'fas fa-fw fa-user',
         ],
         [
-            'text'       => 'warning',
-            'icon_color' => 'yellow',
-            'url'        => '#',
+            'text' => 'change_password',
+            'url'  => 'admin/settings',
+            'icon' => 'fas fa-fw fa-lock',
+        ],
+
+        ['header' => 'USUARIOS'],
+        [
+            'text' => 'Nuevo Usuario',
+            'url'  => 'admin/settings',
+            'icon' => 'fas fa-fw fa-user-plus',
         ],
         [
-            'text'       => 'information',
+            'text' => 'Usuarios Registrados',
+            'url'  => 'admin/settings',
+            'icon' => 'fas fa-fw fa-users',
+        ],
+
+        ['header' => 'OTROS DATOS'],
+
+        [
+            'text'       => 'informacion del sistema',
             'icon_color' => 'cyan',
             'url'        => '#',
         ],
